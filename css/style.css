@@ -291,6 +291,13 @@ footer {
     align-items: center;
     text-align: center;
   }
+  .service-box {
+    transition: transform 0.5s;
+  }
+  .service-box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
   footer {
     height: 71px;
     font-size: 18px;
