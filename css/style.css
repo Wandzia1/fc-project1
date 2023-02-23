@@ -208,6 +208,7 @@ footer {
     font-size: 36px;
   }
   .header-text .header-text-h1 {
+    padding: 0;
     width: 577px;
     height: 46.11px;
     margin-bottom: 62.19px;
