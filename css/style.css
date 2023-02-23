@@ -7,7 +7,6 @@ html {
 }
 
 .container {
-  width: 540px;
   margin: 0 auto;
 }
 
@@ -202,6 +201,7 @@ footer {
   }
   .header-text {
     margin-left: 94px;
+    top: 178px;
   }
   .header-text h1 {
     font-size: 36px;
@@ -243,11 +243,15 @@ footer {
     margin-left: 94px;
   }
   .specialists-header {
+    margin-left: 94px;
     text-align: left;
   }
   .specialists-header h2 {
     text-align: left;
     font-size: 36px;
+  }
+  .specialists {
+    margin-left: 94px;
   }
   .specialist-first {
     display: flex;
@@ -266,33 +270,41 @@ footer {
   }
   .specialist-second .specialist-text {
     text-align: right;
-    margin-right: 60px;
+    margin-right: 40px;
   }
   .specialist-text {
-    width: 866px;
+    width: 600px;
     height: 104px;
-    margin-left: 44px;
+    margin-left: 60px;
   }
   .first-worker {
     text-align: left;
   }
   .service-header {
     font-weight: bold;
+    margin-left: 94px;
   }
   .service-header p {
     text-align: left;
     font-size: 36px;
   }
   .service-container {
+    width: 720px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 63px;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
+    padding-bottom: 64px;
   }
   .service-box {
     transition: transform 0.5s;
+    width: 198px;
+    height: 193.78px;
+    margin: 0;
+    padding: 0;
   }
   .service-box:hover {
     transform: scale(1.05);

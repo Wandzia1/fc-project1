@@ -5,7 +5,7 @@ html {
 	scroll-behavior: smooth;
 }
 .container {
-	width: 540px;
+	// width: 540px;
 	margin: 0 auto;
 }
 
@@ -202,6 +202,7 @@ footer {
 	//header and nav
 	.header-text {
 		margin-left: 94px;
+		top: 178px;
 
 		h1 {
 			font-size: 36px;
@@ -247,11 +248,15 @@ footer {
 	}
 	// main
 	.specialists-header {
+		margin-left: 94px;
 		text-align: left;
 		h2 {
 			text-align: left;
 			font-size: 36px;
 		}
+	}
+	.specialists {
+		margin-left: 94px;
 	}
 
 	.specialist-first {
@@ -271,14 +276,14 @@ footer {
 
 		.specialist-text {
 			text-align: right;
-			margin-right: 60px;
+			margin-right: 40px;
 		}
 	}
 
 	.specialist-text {
-		width: 866px;
+		width: 600px;
 		height: 104px;
-		margin-left: 44px;
+		margin-left: 60px;
 	}
 
 	.first-worker {
@@ -286,6 +291,7 @@ footer {
 	}
 	.service-header {
 		font-weight: bold;
+		margin-left: 94px;
 		p {
 			text-align: left;
 			font-size: 36px;
@@ -293,15 +299,22 @@ footer {
 	}
 
 	.service-container {
+		width: 720px;
 		display: grid;
 		grid-template-rows: repeat(2, 1fr);
 		grid-template-columns: repeat(3, 1fr);
 		gap: 63px;
 		align-items: center;
 		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 64px;
 	}
 	.service-box {
 		transition: transform .5s;
+		width: 198px;
+		height: 193.78px;
+		margin: 0;
+		padding: 0;
 	}
 	.service-box:hover {
 		transform: scale(1.05);
