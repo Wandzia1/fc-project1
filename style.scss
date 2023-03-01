@@ -10,9 +10,11 @@ html {
 
 //nav
 .navbar-container {
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .nav {
@@ -21,9 +23,6 @@ html {
 	position: fixed;
 	background-color: #4e4e4e;
 	z-index: 2;
-}
-.navbar {
-	margin-top: 10px;
 }
 
 .nav-logo {
@@ -42,11 +41,16 @@ html {
 	background-size: cover;
 	background-position: center;
 }
+.header-container {
+	height: 100%;
+}
 
 .header-text {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	color: white;
-	position: absolute;
-	top: 178px;
 	padding-left: 14px;
 	line-height: 40px;
 	z-index: 1;
@@ -56,11 +60,15 @@ html {
 }
 .header-button {
 	width: 164px;
-	height: 41.39px;
+	height: 41px;
 	background-color: rgba(0, 0, 0, 0);
 	border: 3px solid white;
 	text-align: center;
-	color: white;
+	a {
+		align-items: center;
+		color: white;
+		text-decoration: none;
+	}
 }
 
 .header-bg {
@@ -129,9 +137,9 @@ html {
 	flex-direction: column;
 }
 .service-box {
-	width: 338.88px;
+	width: 338px;
 	padding: 0 60px;
-	height: 331.66px;
+	height: 331px;
 	background-color: white;
 	align-items: center;
 	margin: 35px auto;
@@ -202,75 +210,71 @@ footer {
 	}
 	//header and nav
 	.header-text {
-		margin-left: 94px;
-		padding: 0;
 		top: 178px;
+		display: flex;
+		flex-direction: column;
+		z-index: 10;
 
 		h1 {
-			font-size: 36px;
-		}
-		.header-text-h1 {
 			width: 577px;
-			height: 46.11px;
-			margin-bottom: 62.19px;
+			height: 46px;
+			font-size: 36px;
+			margin-bottom: 62px;
 		}
+
 		p {
-			margin-bottom: 56.62px;
+			margin-bottom: 42px;
 		}
-		button {
+		.header-button {
+			align-items: center;
 			cursor: pointer;
 			transition: color 1s, background-color 1s;
 		}
-		button:hover {
+		.header-button:hover {
 			background-color: white;
+			cursor: pointer;
 			color: black;
 		}
 	}
+	.navbar-container {
+		align-items: center;
+	}
 	.nav-items-list {
 		display: flex;
-		padding-right: 44px;
 		li {
 			list-style-type: none;
 			display: inline-block;
 			padding: 0 46px;
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			}
 		}
 		.nav-disabled-link {
 			cursor: not-allowed;
 		}
 	}
-	.nav-items {
-		a {
-			color: white;
-			text-decoration: none;
-			font-size: 18px;
-		}
-	}
-	.nav-logo {
-		margin-left: 94px;
-	}
+
 	// main
+	.specialists-container {
+		background-color: white;
+	}
 	.specialists-header {
-		margin-left: 94px;
 		text-align: left;
 		h2 {
 			text-align: left;
 			font-size: 36px;
 		}
 	}
-	.specialists {
-		margin-left: 94px;
-	}
 
-	.specialist-first {
+	.specialist-description:nth-child(odd) {
 		display: flex;
 		flex-direction: row;
 		justify-content: left;
 		align-items: center;
-		.specialist-text {
-			margin-left: 60px;
-		}
 	}
-	.specialist-second {
+	.specialist-description:nth-child(even) {
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: right;
@@ -278,7 +282,6 @@ footer {
 
 		.specialist-text {
 			text-align: right;
-			margin-right: 40px;
 		}
 	}
 
@@ -293,7 +296,6 @@ footer {
 	}
 	.service-header {
 		font-weight: bold;
-		margin-left: 94px;
 		p {
 			text-align: left;
 			font-size: 36px;
@@ -327,22 +329,11 @@ footer {
 		height: 71px;
 		font-size: 18px;
 		.footer-container {
+			height: 100%;
 			display: flex;
 			flex-direction: row;
+			align-items: center;
 			justify-content: space-between;
-		}
-
-		.footer-text {
-			width: 394px;
-			height: 21px;
-			padding: 0;
-			margin-top: 24px;
-			margin-left: 94px;
-		}
-		.icons {
-			margin-top: 24px;
-			margin-right: 82px;
-			padding: 0;
 		}
 	}
 }
