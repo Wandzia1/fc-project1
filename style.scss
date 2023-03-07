@@ -22,7 +22,7 @@ html {
 	height: 50px;
 	position: fixed;
 	background-color: #4e4e4e;
-	z-index: 3;
+	z-index: 20;
 }
 
 .nav-logo {
@@ -53,7 +53,7 @@ html {
 	color: white;
 	padding-left: 14px;
 	line-height: 40px;
-	z-index: 2;
+	z-index: 5;
 	p {
 		padding: 18px 0;
 	}
@@ -64,11 +64,11 @@ html {
 	background-color: rgba(0, 0, 0, 0);
 	border: 3px solid white;
 	text-align: center;
-	a {
-		align-items: center;
-		color: white;
-		text-decoration: none;
-	}
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
 }
 
 .header-bg {
@@ -174,9 +174,11 @@ footer {
 	height: 147px;
 	background-color: #4e4e4e;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .footer-text {
-	padding-top: 38px;
 	text-align: center;
 }
 .icons {
@@ -184,8 +186,7 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	font-size: 31px;
-	padding-bottom: 27px;
-	padding-top: 15px;
+	margin-top: 15px;
 	a {
 		color: white;
 		text-decoration: none;
@@ -199,9 +200,6 @@ footer {
 	.container {
 		width: 720px;
 	}
-	.header-text {
-		top: 350px;
-	}
 }
 
 @media (min-width: 1024px) {
@@ -213,7 +211,6 @@ footer {
 		top: 178px;
 		display: flex;
 		flex-direction: column;
-		z-index: 10;
 
 		h1 {
 			width: 577px;
@@ -229,6 +226,9 @@ footer {
 			align-items: center;
 			cursor: pointer;
 			transition: color 1s, background-color 1s;
+			text-decoration: none;
+			color: white;
+			z-index: 15;
 		}
 		.header-button:hover {
 			background-color: white;
@@ -261,10 +261,20 @@ footer {
 		background-color: white;
 	}
 	.specialists-header {
+		padding-top: 51px;
+		padding-bottom: 51px;
 		text-align: left;
 		h2 {
 			text-align: left;
 			font-size: 36px;
+		}
+	}
+	.specialists {
+		.first-worker {
+			margin-left: 0;
+		}
+		.second-worker {
+			margin-right: 0;
 		}
 	}
 
@@ -279,21 +289,17 @@ footer {
 		flex-direction: row-reverse;
 		justify-content: right;
 		align-items: center;
-
 		.specialist-text {
 			text-align: right;
 		}
 	}
 
 	.specialist-text {
-		width: 600px;
+		width: 660px;
 		height: 104px;
 		margin-left: 60px;
 	}
 
-	.first-worker {
-		text-align: left;
-	}
 	.service-header {
 		font-weight: bold;
 		p {
@@ -327,15 +333,19 @@ footer {
 	//footer
 	footer {
 		height: 71px;
-		font-size: 18px;
 		.footer-container {
 			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
 			align-items: center;
 			.footer-text {
+				height: 100%;
 				font-size: 18px;
 			}
 			.icons {
-				font-size: 18px;
+				height: 100%;
+				margin: 0;
+				font-size: 31px;
 			}
 		}
 	}
